@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16px"
+            android:paddingBottom="8px"
+            android:paddingStart="16px"
+            android:paddingEnd="16px"
+            android:text="nombre producto"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:paddingTop="8px"
+            android:paddingBottom="8px"
+            android:paddingStart="16px"
+            android:paddingEnd="16px"
+            android:text="description"/>
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription"
+            android:paddingTop="8px"
+            android:paddingBottom="8px"
+            android:paddingStart="16px"
+            android:paddingEnd="16px"
+            android:text="180"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

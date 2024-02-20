@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalles_productos">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:paddingTop="24px"
+        android:paddingBottom="24px"
+        android:text="Titulo"/>
+
+    <ImageView
+        android:id="@+id/imageExample"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="24px"
+        android:paddingBottom="24px"
+        android:paddingEnd="16px"
+        android:paddingStart="16px"
+        android:layout_below="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvDescriptionDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:paddingTop="24px"
+        android:paddingBottom="24px"
+        android:paddingEnd="16px"
+        android:paddingStart="16px"
+        android:layout_below="@+id/imageExample"/>
+
+    <TextView
+        android:id="@+id/tvPrecioDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp"
+        android:gravity="center"
+        android:layout_below="@+id/tvDescriptionDetalle"/>
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvPrecioDetalle"
+        android:paddingTop="32px"
+        android:paddingBottom="24px"
+        android:paddingEnd="35px"
+        android:paddingStart="35px"
+        android:layout_centerHorizontal="true"
+        android:background="@color/title"
+        android:text="Cerrar"/>
+
+</RelativeLayout>
